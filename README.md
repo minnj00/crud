@@ -2,10 +2,13 @@
 
 # CRUD (create read update delete)
 
+> '<>'
+
 1. 프로젝트폴더 생성
 2. 프로젝트 폴더로 이동/ vscode 실행
-    2.1 `.gitignore`, `README.md` 생성
+    -  `.gitignore`, `README.md` 생성
 3. django 프로젝트 생성
+    - `<pjt-name>` 공간은 변수를 의미합니다.
 ```bash
 django-admin startproject <pjt-name> .
 ```
@@ -23,3 +26,18 @@ source venv/bin/activate
 ```bash
 pip install django
 ```
+7. 서버 실행 확인
+```bash
+python manage.py runserver
+```
+실행했을 때 rocket 이 뜨면 good!
+
+8. 앱 생성(큰 기능이 있을 때마다 앱을 생성할 것)
+```bash
+django-admin startapp <app-name>
+```
+   
+
+
+
+- 오늘은 하나씩 배울 때 마다 commit 으로 업로드 해주고 복습할 때도 commit 목록을 보면서 어느 부분이 수정되어있는지 확인하며 부분으로 나눠서 학습 가능 
