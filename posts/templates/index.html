@@ -9,6 +9,9 @@
     <h1>index</h1>
     {% for post in posts %}
         <p>{{post.title}}</p>
+        <a href="/posts/{{post.id}}">detail</a> 
+        <!-- post 앞의 주소 생략가능  -->
+        <hr>
     {% endfor %}
 </body>
 </html>
