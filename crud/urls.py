@@ -18,9 +18,20 @@ from django.contrib import admin
 from django.urls import path
 from posts import views 
 
+
+# path 라는 함수를 실행한 것을 저장하는 것! 첫번째 요소는 경로, 두번째는 함수)
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Read
     path('index/', views.index),
-    path('posts/<int:id>', views.detail),
+    path('posts/<int:id>/', views.detail),
+
+    # Create
+    path('posts/new/', views.new),
+    path('posts/create/', views.create),
+
+    # Delete
+    path('posts/<int:id>/delete/', views.delete),
+
 ]
 
