@@ -33,7 +33,7 @@ def create(request):
     post.conten = content
     post.save()
 
-    return redirect(f'/posts/{post.id}')
+    return redirect(f'/posts/{post.id}/')
 
 def delete(request, id):
     post = Post.objects.get(id=id) # 찾는 코드
