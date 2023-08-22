@@ -2,7 +2,7 @@
 
 # CRUD (create read update delete)
 
-> '<>'
+> '<>'는 변수 
 
 1. 프로젝트폴더 생성
 2. 프로젝트 폴더로 이동/ vscode 실행
@@ -36,7 +36,16 @@ python manage.py runserver
 ```bash
 django-admin startapp <app-name>
 ```
-   
+
+setting.py에 앱 등록
+그 다음 첫 시작은 항상 urls 
+
+from posts import views 
+ulrpatterns = []에 path('index/', views.index) 추가
+
+views.py 에서 함수 생성
+
+posts
 
 
 
