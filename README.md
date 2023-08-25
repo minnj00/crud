@@ -12,12 +12,9 @@
 ```bash
 django-admin startproject <pjt-name> .
 ```
-<<<<<<< HEAD
 
 - . 잊지말기 잊으면 manage.py 가 폴더 안에 생겨버림
-=======
 . 잊지말기 잊으면 manage.py 가 폴더 안에 생겨버림
->>>>>>> bc6b6130da61068a01b86e9d0d9a4526122cf584
 
 4. 가상환경 설정 (venv 폴더 생성됨, django 가 전역에 있지만 이 프로젝트는 가상환경에서 실행하기 위해 django 를 가상환경에도 결국 설치해서 실행)
 ```bash
