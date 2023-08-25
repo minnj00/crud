@@ -12,9 +12,12 @@
 ```bash
 django-admin startproject <pjt-name> .
 ```
+
+- . 잊지말기 잊으면 manage.py 가 폴더 안에 생겨버림
+
 4. 가상환경 설정 (venv 폴더 생성됨, django 가 전역에 있지만 이 프로젝트는 가상환경에서 실행하기 위해 django 를 가상환경에도 결국 설치해서 실행)
 ```bash
-p
+python -m venv venv
 ```
 5. 가상환경 활성화
 ```bash
@@ -44,7 +47,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-10. `url.py` => `views.py` => `templates/*.html` 순서로 코드 작성
+10. `urls.py` => `views.py` => `templates/*.html` 순서로 코드 작성
 
 
 
@@ -65,7 +68,7 @@ INSTALLED_APPS = [
     # Creat your models here.
     class Post(models.Model): # models 모듈에서 Model 이라는 class를 상속
     title = models.CharField(max_length=100)
-    conten = models.TextField()
+    content = models.TextField()
     ```
 2. 번역본 생성 (파이썬과 sql을 연결)
 ```bash
